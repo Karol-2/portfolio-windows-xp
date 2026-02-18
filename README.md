@@ -1,5 +1,7 @@
 # Windows XP Portfolio
 
+[CLICK HERE TO VISIT](https://karol-2.github.io/portfolio-windows-xp/)
+
 A web portfolio inspired by the classic **Windows XP** look and feel.  
 Created as an interactive application showcasing my skills and future projects in the form of a retro operating system experience.
 
@@ -24,6 +26,13 @@ Features that will be added in the future:
 - [ ] Personal projects page
 - [ ] Language switch (PL / EN)
 - [ ] More Windows XP–inspired features
+
+---
+
+## Build
+
+`ng build --output-path docs/portfolio-windows-xp --base-href /portfolio-windows-xp/`
+Then move it's content to the directory above.
 
 ---
 
