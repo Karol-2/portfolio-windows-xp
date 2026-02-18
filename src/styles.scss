@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@use "styles/colors.scss" as *;
+@use "styles/variables.scss" as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Tahoma", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+}
+
+// CDK Dialog
+.cdk-overlay-container {
+  pointer-events: none;
+}
+
+.cdk-overlay-backdrop {
+  display: none !important;
+}
+
+.cdk-dialog-container {
+  pointer-events: auto;
+  position: fixed !important;
+  transform: none !important;
+  margin: 0 !important;
+  z-index: 1000 !important;
+}
+
+.cdk-overlay-pane {
+  pointer-events: auto;
+  position: fixed !important;
+  transform: none !important;
+  margin: 0 !important;
+  z-index: 1000 !important;
+}
+
+.cdk-overlay-container {
+  z-index: 1000 !important;
+}

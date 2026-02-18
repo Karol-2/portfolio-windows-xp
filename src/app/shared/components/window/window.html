@@ -1,0 +1,81 @@
+<div
+  class="window"
+  [class.active]="isActive()"
+  [style.width.px]="width()"
+  [style.height.px]="height()"
+>
+  <header class="title-bar" (mousedown)="startDrag($event)">
+    <div class="title-bar-left">
+      <img [src]="icon()" alt="icon" class="title-icon" />
+      <span class="title-text">{{name()}}</span>
+    </div>
+    <div class="title-bar-right">
+      <button
+        class="window-button minimize"
+        type="button"
+        aria-label="Minimize"
+        (click)="close()"
+      >
+        <!-- TODO: add minimalise window function -->
+        <img src="assets/icons/Minimize.png" alt="minimize" />
+      </button>
+      <button
+        class="window-button maximize"
+        type="button"
+        [attr.aria-label]="isMaximized() ? 'Restore' : 'Maximize'"
+        [class.restore]="isMaximized()"
+        (click)="toggleMaximize()"
+      >
+        <img
+          [src]="isMaximized() ? 'assets/icons/Restore.png' : 'assets/icons/Maximize.png'"
+          alt="maximize"
+        />
+      </button>
+      <button
+        class="window-button close"
+        type="button"
+        aria-label="Close"
+        (click)="close()"
+      >
+        <img src="assets/icons/Exit.png" alt="close" />
+      </button>
+    </div>
+  </header>
+  <div class="window-content" [cdkPortalOutlet]="data.content"></div>
+
+  <!-- Resize handles -->
+  @if (!isMaximized()) {
+  <div
+    class="resize-handle resize-handle-n"
+    (mousedown)="startResize($event, 'n')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-s"
+    (mousedown)="startResize($event, 's')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-e"
+    (mousedown)="startResize($event, 'e')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-w"
+    (mousedown)="startResize($event, 'w')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-ne"
+    (mousedown)="startResize($event, 'ne')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-nw"
+    (mousedown)="startResize($event, 'nw')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-se"
+    (mousedown)="startResize($event, 'se')"
+  ></div>
+  <div
+    class="resize-handle resize-handle-sw"
+    (mousedown)="startResize($event, 'sw')"
+  ></div>
+  }
+</div>

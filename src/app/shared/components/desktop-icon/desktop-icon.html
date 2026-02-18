@@ -1,0 +1,13 @@
+<div
+  class="desktop-icon"
+  tabindex="0"
+  [class.selected]="isSelected()"
+  [style.transform]="transform()"
+  (click)="select($event)"
+  (dblclick)="openDialog()"
+  (mousedown)="startDrag($event)"
+  (keydown)="select($event)"
+>
+  <img [src]="icon()" alt="icon" />
+  <p>{{name()}}</p>
+</div>

@@ -1,0 +1,28 @@
+:host {
+  overflow: auto;
+  margin: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: var(--spacing-lg);
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  align-self: start;
+
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 10rem;
+    width: 10rem;
+    border: 2px var(--primary) solid;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}

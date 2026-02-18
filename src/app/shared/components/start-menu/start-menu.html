@@ -1,0 +1,40 @@
+<div class="start-menu">
+  <div class="top">
+    <img
+      class="user-logo"
+      src="https://images.saymedia-content.com/.image/ar_1:1,c_fill,cs_srgb,fl_progressive,q_auto:eco,w_1200/MTc2MjcyMDUzODI0MDA1Mjkz/5-most-beautiful-dog-breeds-in-the-world.jpg"
+      alt="a user logo"
+    />
+    <p>User</p>
+  </div>
+  <div class="middle">
+    <div class="middle-left">
+      <div class="dynamic-options">
+        @for(button of dynamicOptions(); track $index){
+        <div class="option">
+          <img [src]="button.icon" [alt]="button.name" />
+          <span>{{button.name}}</span>
+        </div>
+        }
+      </div>
+    </div>
+    <div class="middle-right">
+      @for(button of standardOptions(); track $index){
+      <div class="option">
+        <img [src]="button.icon" [alt]="button.name" />
+        <span>{{button.name}}</span>
+      </div>
+      }
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="bottom-button">
+      <img src="assets/icons/Logout.png" [alt]="'a logout icon'" />
+      <span>Log off</span>
+    </div>
+    <div class="bottom-button">
+      <img src="assets/icons/Power.png" [alt]="'a logout icon'" />
+      <span>Turn Off</span>
+    </div>
+  </div>
+</div>

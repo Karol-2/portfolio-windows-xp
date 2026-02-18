@@ -1,59 +1,46 @@
-# MyPage
+# Windows XP Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+A web portfolio inspired by the classic **Windows XP** look and feel.  
+Created as an interactive application showcasing my skills and future projects in the form of a retro operating system experience.
 
-## Development server
+---
 
-To start a local development server, run:
+## Tech Stack
 
-```bash
-ng serve
-```
+This project was built using:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 20
+- TypeScript
+- SCSS
+- Styling inspired by the Windows XP interface
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## TODO / Planned Features
 
-```bash
-ng generate component component-name
-```
+Features that will be added in the future:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- [ ] Multi window system
+- [ ] Personal projects page
+- [ ] Language switch (PL / EN)
+- [ ] More Windows XP–inspired features
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Disclaimer / Copyright Notice
 
-To build the project run:
+This project is a fan-made and educational work created solely for portfolio purposes.
 
-```bash
-ng build
-```
+I do not own any of the graphics or visual assets inspired by Windows XP.  
+All rights to the original interface design, graphics, and trademarks belong to Microsoft / Windows.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Additional icons used in this project come from:
 
-## Running unit tests
+- Windows XP High Resolution Icon Pack  
+  author: marchmountain  
+  https://www.deviantart.com/marchmountain/art/Windows-XP-High-Resolution-Icon-Pack-916042853
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Font Awesome  
+  https://fontawesome.com/
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+All assets were used for demonstration purposes only, with no intention of violating copyright.

@@ -1,0 +1,38 @@
+:host {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.desktop-icon {
+  padding: 6px 4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  img {
+    width: 42px;
+    height: 42px;
+  }
+
+  p {
+    font-size: 12px;
+    color: var(--white);
+    user-select: none;
+    text-align: center;
+  }
+
+  &.selected {
+    img {
+      background-color: var(--primary);
+      mix-blend-mode: multiply;
+    }
+
+    p {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}

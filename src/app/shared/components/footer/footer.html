@@ -1,0 +1,15 @@
+<footer>
+  <div class="button-wrapper">
+    <button class="start-button" (click)="changeStartMenuVisibility()">
+      <img src="assets/icons/start.png" alt="start button" />
+    </button>
+    @if(startMenuVisible()){
+    <app-start-menu />
+    }
+  </div>
+
+  <div class="active-apps"></div>
+  <div class="right-panel">
+    <div class="clock">{{ date() | date:'HH:mm'}}</div>
+  </div>
+</footer>
